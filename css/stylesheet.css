@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.arbutus {
+  font-family: "Arbutus Slab", serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+  font-family: "Arial";
+}
+nav li a:hover {
+  color: red;
+}
+.navtoggler {
+  display: none;
+}
+body {
+  background-color: #aaaaaa;
+  display: flex;
+}
+
+nav {
+  width: 100vw;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.jumbotron {
+  background-color: pink;
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+}
+.jumbotron-text {
+  width: 60vw;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+section {
+  background-color: red;
+}
+
+.jumbotron h1 {
+  margin: 0px;
+}
+
+.jumbotron p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 500px) {
+  nav li {
+    margin: 0;
+  }
+  .modal {
+    display: none;
+  }
+  .modal.open {
+    display: block;
+  }
+
+  .menu.closed {
+    display: none;
+  }
+  nav {
+    display: flex;
+    background-color: palevioletred;
+    flex-direction: column;
+  }
+  nav li {
+    display: block;
+    text-align: center;
+    color: #000000;
+  }
+
+  .navtoggler {
+    display: block;
+    align-self: center;
+
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: palevioletred;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
