@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 2vh;
 }
 
 *,
@@ -10,12 +11,14 @@ html {
 
 body {
   margin: 0;
+  font-family: "Arbutus Slab", serif;
+  display: flex;
 }
 
 .arbutus {
   font-family: "Arbutus Slab", serif;
 }
-ul {
+nav ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -23,66 +26,126 @@ ul {
 }
 nav li {
   list-style-type: none;
-  margin: 0 2vw;
-  font-size: 2rem;
+  margin: 1.5vw;
+  font-size: 1.25rem;
 }
 
 nav li a {
   text-decoration: none;
   color: black;
-  padding: 2vw;
-  font-family: "Arial";
+  padding: 3.5vw;
 }
+
+.scroll nav {
+  background-color: white;
+  color: palevioletred;
+}
+.scroll li a {
+  text-decoration: underline;
+  color: palevioletred;
+  padding: 3.5vw;
+}
+
 nav li a:hover {
   color: red;
 }
 .navtoggler {
   display: none;
 }
-body {
-  background-color: #aaaaaa;
-  display: flex;
-}
 
-nav {
-  width: 100vw;
-  padding: 0;
+.nav {
+  width: 100%;
+  padding: 0.25rem;
   margin-bottom: 0px;
+  position: fixed;
+  background-color: pink;
+  transition: background-color 0.4s ease-out;
 }
 
 .jumbotron {
   background-color: pink;
   color: #000000;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.4s ease-out;
+}
+.scroll .jumbotron {
+  background-color: white;
 }
 .jumbotron-text {
-  width: 60vw;
+  width: max-content;
   margin: auto;
-  font-size: 1.5rem;
-  text-align: center;
   padding: 1rem;
+  text-align: center;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 100vh;
+  width: 100vw;
 }
 section {
-  background-color: red;
+  width: 100vw;
 }
 
 .jumbotron h1 {
-  margin: 0px;
+  font-size: 3rem;
+
+  margin-bottom: 0vh;
 }
 
 .jumbotron p {
-  text-align: justify;
+  font-size: 1.15rem;
+  margin-top: 0;
+}
+
+.site-section {
+  width: 65vw;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.portfolio-item {
+  width: 100%;
+}
+.portfolio-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: auto;
+}
+.portfolio-item-part {
+  width: 50%;
+  background-color: blue;
+  margin: 0;
+}
+
+ul.portfolio-item-part {
+  list-style: circle;
+}
+
+h3.portfolio-item {
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-icon {
+  font-size: 4rem;
+
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 500px) {
-  nav li {
-    margin: 0;
-  }
   .modal {
     display: none;
   }
@@ -99,9 +162,14 @@ section {
     flex-direction: column;
   }
   nav li {
-    display: block;
+    margin: 0;
     text-align: center;
     color: #000000;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
   }
 
   .navtoggler {
@@ -114,5 +182,41 @@ section {
     border: none;
     outline: none;
     cursor: pointer;
+  }
+
+  .jumbotron-text {
+    width: max-content;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-item-part {
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .contact-icon {
+    font-size: 3rem;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px;
+    margin: auto;
+  }
+  .nav {
+    width: 1280px;
   }
 }

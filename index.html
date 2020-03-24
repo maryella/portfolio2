@@ -6,25 +6,32 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./foundation-icons/foundation-icons.css" />
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css" />
     <title>Let's do it!</title>
   </head>
   <body>
     <div class="container">
-      <nav class="nav">
+      <nav id="nav" class="nav">
         <button class="navtoggler menu" id="toggleNavOpen">menu</button>
-        <ul class="modal">
-          <button class="navtoggler" id="toggleNavClosed">X</button>
-          <li>
-            <a href="#aboutMe"> About Me </a>
-          </li>
-          <li>
-            <a href="#projects"> Projects </a>
-          </li>
-          <li>
-            <a href="#contacts"> Contacts </a>
-          </li>
-        </ul>
+        <div class="modal">
+          <button class="navtoggler x" id="toggleNavClosed">X</button>
+          <ul>
+            <li>
+              <a href="#aboutMe"> About Me </a>
+            </li>
+            <li>
+              <a href="#projects"> Projects </a>
+            </li>
+            <li>
+              <a href="#contacts"> Contacts </a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <section aria-label="Introduction">
@@ -32,9 +39,103 @@
           <div class="jumbotron-text">
             <h1>
               Hi! <br />
-              I'm Mary Ella
+              I'm Mary Ella,
             </h1>
             <p>a software developer based in Atlanta</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="About Me">
+        <div class="site-section" id="aboutMe">
+          <h2>About Me</h2>
+          <p>
+            Before web development, I spent several years as a pharmacist
+            working in the retail setting. After a few online classes, I
+            realized I really enjoyed coding and using code to solve problems. I
+            decided to take the leap and enroll in a bootcamp full-time. I
+            graduated from Digital Crafts full-stack immersive course in
+            December, and I was honored when I was chosen to act as a developer
+            in residence (kind of like a teaching assistant) for the January
+            2020 cohort.
+          </p>
+          <p>
+            When I'm not coding, I enjoy traveling. Some of my favorite places
+            are Montreal, Berlin, and Mexico City. While in town, you can find
+            me going out to check out different restaurants or staying home and
+            baking. Either way, I always like to try something new!
+          </p>
+        </div>
+      </section>
+      <section aria-label="portfolio">
+        <div id="portfolio" class="site-section">
+          <h2>Portfolio</h2>
+          <div class="portfolio-item">
+            <h3 class="portfolio-item">i-Survived</h3>
+            <div class="portfolio-content">
+              <div class="portfolio-item-part">
+                <img
+                  src="./images/screenshot_isurvived.png"
+                  class="portfolio-img"
+                  alt="Screenshot of I-Survived Project"
+                />
+              </div>
+              <div class="portfolio-item-part">
+                <ul>
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <h3 class="portfolio-item">Winery Review</h3>
+            <div class="portfolio-content">
+              <div class="portfolio-item-part">
+                <img
+                  src="./images/screenshot_winery.png"
+                  class="portfolio-img"
+                  alt="Screenshot of Winery Review Project"
+                />
+              </div>
+              <div class="portfolio-item-part">
+                <ul>
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Contact Info">
+        <div id="contact" class="site-section contact">
+          <div class="contact-icon">
+            <a
+              href="https://github.com/maryella"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fi-social-github"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a
+              href="./files/maryellahill.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fi-page-pdf"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a href="mailto: hillmaryella@gmail.com"><i class="fi-mail"></i></a>
+          </div>
+          <div class="contact-icon">
+            <a
+              href="https://www.linkedin.com/in/maryellahill/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fi-social-linkedin"></i
+            ></a>
           </div>
         </div>
       </section>

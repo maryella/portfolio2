@@ -15,3 +15,9 @@ closeNavButton.addEventListener("click", function(e) {
   const menu = document.querySelector(".menu");
   menu.classList.toggle("closed");
 });
+
+window.onscroll = () => {
+  const body = document.querySelector("body");
+  if (this.scrollY <= 10) body.className = "";
+  else body.className = "scroll";
+};
