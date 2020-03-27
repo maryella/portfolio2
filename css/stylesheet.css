@@ -33,7 +33,7 @@ nav li {
 nav li a {
   text-decoration: none;
   color: black;
-  padding: 3.5vw;
+  margin: 3.5vw;
 }
 
 .scroll nav {
@@ -41,13 +41,18 @@ nav li a {
   color: palevioletred;
 }
 .scroll li a {
-  text-decoration: underline;
   color: palevioletred;
-  padding: 3.5vw;
+  padding-bottom: 0.25vw;
+  border-bottom: 1px solid black;
 }
 
 nav li a:hover {
-  color: red;
+  border-bottom: 1px solid black;
+}
+.scroll li a:hover {
+  color: palevioletred;
+  padding-bottom: 0.25vw;
+  border-bottom: 0px solid;
 }
 .navtoggler {
   display: none;
@@ -58,7 +63,6 @@ nav li a:hover {
   padding: 0.25rem;
   margin-bottom: 0px;
   position: fixed;
-  background-color: pink;
   transition: background-color 0.4s ease-out;
 }
 
@@ -87,9 +91,6 @@ nav li a:hover {
   width: 100vh;
   width: 100vw;
 }
-section {
-  width: 100vw;
-}
 
 .jumbotron h1 {
   font-size: 3rem;
@@ -102,6 +103,24 @@ section {
   margin-top: 0;
 }
 
+section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot {
+  align-self: flex-start;
+  width: 33%;
+  float: left;
+  margin-right: 2vw;
+}
+
+.abouttext {
+  flex: 1 1 auto;
+  text-align: justify;
+}
+
 .site-section {
   width: 65vw;
   margin: auto;
@@ -110,24 +129,31 @@ section {
 
 .portfolio-item {
   width: 100%;
+  margin-bottom: 2vh;
 }
 .portfolio-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-
+.portfolio-item-part {
+  width: 50%;
+  margin: 0;
+}
 .portfolio-img {
   width: 100%;
   height: auto;
 }
-.portfolio-item-part {
-  width: 50%;
-  background-color: blue;
-  margin: 0;
-}
 
-ul.portfolio-item-part {
-  list-style: circle;
+.portfolio-item-part-header {
+  font-size: 1.25rem;
+  margin: auto;
+  padding-left: 3vw;
+}
+.portfolio-item-part ul {
+  margin-top: 0.2vh;
+  font-size: 0.8rem;
+  padding-left: 5vw;
 }
 
 h3.portfolio-item {
@@ -141,8 +167,15 @@ h3.portfolio-item {
 }
 .contact-icon {
   font-size: 4rem;
-
   flex-direction: row;
+}
+
+.contact-icon a {
+  color: #000000;
+}
+
+.contact-icon a:hover {
+  color: palevioletred;
 }
 
 @media only screen and (max-width: 500px) {
@@ -151,6 +184,7 @@ h3.portfolio-item {
   }
   .modal.open {
     display: block;
+    align-items: center;
   }
 
   .menu.closed {
@@ -158,11 +192,10 @@ h3.portfolio-item {
   }
   nav {
     display: flex;
-    background-color: palevioletred;
     flex-direction: column;
   }
   nav li {
-    margin: 0;
+    margin: 0.25rem;
     text-align: center;
     color: #000000;
     font-size: 1rem;
@@ -170,18 +203,24 @@ h3.portfolio-item {
 
   nav ul {
     flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .navtoggler {
     display: block;
     align-self: center;
-
     padding: 2vw;
-    font-size: 3vh;
-    background-color: palevioletred;
+    font-size: 4vh;
+    background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+  }
+  .close {
+    float: right;
+    font-size: 2rem;
+    margin-right: 2vw;
   }
 
   .jumbotron-text {
@@ -192,13 +231,22 @@ h3.portfolio-item {
     width: 100%;
     height: auto;
   }
+
   .portfolio-content {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .portfolio-item-part {
     width: 100%;
     padding: 0.25rem;
+  }
+
+  .headshot {
+    width: 100%;
+    float: none;
+    margin: auto;
+    margin-right: 0;
   }
 
   .contact {
@@ -208,6 +256,23 @@ h3.portfolio-item {
   .contact-icon {
     font-size: 3rem;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .portfolio-item-part {
+    width: 100%;
+    padding: 0.25rem;
   }
 }
 

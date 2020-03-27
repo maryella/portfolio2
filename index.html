@@ -17,18 +17,23 @@
   <body>
     <div class="container">
       <nav id="nav" class="nav">
-        <button class="navtoggler menu" id="toggleNavOpen">menu</button>
+        <button class="navtoggler menu" id="toggleNavOpen">
+          <span><i class="fi-list-thumbnails" alt="open menu"></i></span>
+        </button>
         <div class="modal">
-          <button class="navtoggler x" id="toggleNavClosed">X</button>
+          <span class="close "
+            ><button id="toggleNavClosed" class="navtoggler">
+              <i class="fi-x" alt="close menu"></i></button
+          ></span>
           <ul>
             <li>
               <a href="#aboutMe"> About Me </a>
             </li>
             <li>
-              <a href="#projects"> Projects </a>
+              <a href="#portfolio"> Projects </a>
             </li>
             <li>
-              <a href="#contacts"> Contacts </a>
+              <a href="#contact"> Contacts </a>
             </li>
           </ul>
         </div>
@@ -49,7 +54,12 @@
       <section aria-label="About Me">
         <div class="site-section" id="aboutMe">
           <h2>About Me</h2>
-          <p>
+          <img
+            src="./images/IMG_5776.jpg"
+            class="headshot"
+            alt="A picture of Mary Ella"
+          />
+          <p class="abouttext">
             Before web development, I spent several years as a pharmacist
             working in the retail setting. After a few online classes, I
             realized I really enjoyed coding and using code to solve problems. I
@@ -69,9 +79,8 @@
       </section>
       <section aria-label="portfolio">
         <div id="portfolio" class="site-section">
-          <h2>Portfolio</h2>
+          <h2>Featured Projects</h2>
           <div class="portfolio-item">
-            <h3 class="portfolio-item">i-Survived</h3>
             <div class="portfolio-content">
               <div class="portfolio-item-part">
                 <img
@@ -80,16 +89,22 @@
                   alt="Screenshot of I-Survived Project"
                 />
               </div>
+
               <div class="portfolio-item-part">
+                <h3 class="portfolio-item-part-header">i-Survived</h3>
                 <ul>
-                  <li>Lorem</li>
-                  <li>Ipsum</li>
+                  <li>
+                    App to educate recent heart attack survivors about the new
+                    meds they need after diagnosis
+                  </li>
+                  <li>Client-side built using React</li>
+                  <li>API built using Node/Express</li>
+                  <li>Routes with user data protected using JSON Web Token</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="portfolio-item">
-            <h3 class="portfolio-item">Winery Review</h3>
             <div class="portfolio-content">
               <div class="portfolio-item-part">
                 <img
@@ -99,6 +114,7 @@
                 />
               </div>
               <div class="portfolio-item-part">
+                <h3 class="portfolio-item-part-header">Winery Review</h3>
                 <ul>
                   <li>Lorem</li>
                   <li>Ipsum</li>
