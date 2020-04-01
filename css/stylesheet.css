@@ -27,6 +27,7 @@ body.scroll {
 nav ul {
   margin: 0;
   padding: 0;
+  margin-bottom: 1vh;
   display: flex;
   justify-content: center;
 }
