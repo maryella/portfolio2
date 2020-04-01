@@ -6,13 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="icon" href="files/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./foundation-icons/foundation-icons.css" />
     <link type="text/css" rel="stylesheet" href="./css/stylesheet.css" />
-    <title>Let's do it!</title>
+    <title>Mary Ella Hill</title>
   </head>
   <body>
     <div class="container">
@@ -50,7 +51,77 @@
           </div>
         </div>
       </section>
+      <section aria-label="portfolio">
+        <div id="portfolio" class="site-section">
+          <h2>Featured Projects</h2>
+          <div class="portfolio-item">
+            <div class="portfolio-content">
+              <div class="portfolio-item-part">
+                <img
+                  src="./images/screenshot_isurvived.png"
+                  class="portfolio-img"
+                  alt="Screenshot of I-Survived Project"
+                />
+              </div>
 
+              <div class="portfolio-item-part">
+                <h3 class="portfolio-item-part-header">
+                  i-Survived
+                </h3>
+
+                <a
+                  href="https://github.com/maryella/isurvived"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="portfolio-item-part-subheader"
+                >
+                  See on Github <i class="fi-social-github"></i
+                ></a>
+
+                <ul>
+                  <li>
+                    Educates recent heart attack survivors about the new meds
+                    they need after diagnosis
+                  </li>
+                  <li>
+                    Full-stack application built with React front end,
+                    Express/Node server-side
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-content">
+              <div class="portfolio-item-part">
+                <img
+                  src="./images/screenshot_winery.png"
+                  class="portfolio-img"
+                  alt="Screenshot of Winery Review Project"
+                />
+              </div>
+              <div class="portfolio-item-part">
+                <h3 class="portfolio-item-part-header">Winery Review</h3>
+                <a
+                  href="https://github.com/maryella/wineryreview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="portfolio-item-part-subheader"
+                >
+                  See on Github <i class="fi-social-github"></i
+                ></a>
+                <ul>
+                  <li>Connects users to local Georgia wineries</li>
+                  <li>
+                    Full stack application using Node/Express for all aspects of
+                    MVC, with database in PostgreSQL
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section aria-label="About Me">
         <div class="site-section" id="aboutMe">
           <h2>About Me</h2>
@@ -77,81 +148,40 @@
           </p>
         </div>
       </section>
-      <section aria-label="portfolio">
-        <div id="portfolio" class="site-section">
-          <h2>Featured Projects</h2>
-          <div class="portfolio-item">
-            <div class="portfolio-content">
-              <div class="portfolio-item-part">
-                <img
-                  src="./images/screenshot_isurvived.png"
-                  class="portfolio-img"
-                  alt="Screenshot of I-Survived Project"
-                />
-              </div>
 
-              <div class="portfolio-item-part">
-                <h3 class="portfolio-item-part-header">i-Survived</h3>
-                <ul>
-                  <li>
-                    App to educate recent heart attack survivors about the new
-                    meds they need after diagnosis
-                  </li>
-                  <li>Client-side built using React</li>
-                  <li>API built using Node/Express</li>
-                  <li>Routes with user data protected using JSON Web Token</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-content">
-              <div class="portfolio-item-part">
-                <img
-                  src="./images/screenshot_winery.png"
-                  class="portfolio-img"
-                  alt="Screenshot of Winery Review Project"
-                />
-              </div>
-              <div class="portfolio-item-part">
-                <h3 class="portfolio-item-part-header">Winery Review</h3>
-                <ul>
-                  <li>Lorem</li>
-                  <li>Ipsum</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section aria-label="Contact Info">
-        <div id="contact" class="site-section contact">
-          <div class="contact-icon">
-            <a
-              href="https://github.com/maryella"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fi-social-github"></i
-            ></a>
-          </div>
-          <div class="contact-icon">
-            <a
-              href="./files/mhill.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fi-page-pdf"></i
-            ></a>
-          </div>
-          <div class="contact-icon">
-            <a href="mailto: hillmaryella@gmail.com"><i class="fi-mail"></i></a>
-          </div>
-          <div class="contact-icon">
-            <a
-              href="https://www.linkedin.com/in/maryellahill/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fi-social-linkedin"></i
-            ></a>
+        <div id="contact" class="site-section">
+          <!-- <h2>Get in Touch</h2> -->
+          <div class="contact">
+            <div class="contact-icon">
+              <a
+                href="https://github.com/maryella"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fi-social-github"></i
+              ></a>
+            </div>
+            <div class="contact-icon">
+              <a
+                href="./files/mhill.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fi-page-pdf"></i
+              ></a>
+            </div>
+            <div class="contact-icon">
+              <a href="mailto: hillmaryella@gmail.com"
+                ><i class="fi-mail"></i
+              ></a>
+            </div>
+            <div class="contact-icon">
+              <a
+                href="https://www.linkedin.com/in/maryellahill/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fi-social-linkedin"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>

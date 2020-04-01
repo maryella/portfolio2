@@ -37,7 +37,7 @@ nav li {
   font-size: 1.25rem;
 }
 
-nav li a {
+.nav li a {
   text-decoration: none;
   color: black;
   margin: 3.5vw;
@@ -47,7 +47,7 @@ nav li a {
   background-color: white;
   transition: background-color 0.8s ease-in;
 }
-.scroll li a {
+.scroll nav li a {
   color: palevioletred;
   padding-bottom: 0.25vw;
   border-bottom: 1px solid black;
@@ -56,7 +56,7 @@ nav li a {
 nav li a:hover {
   border-bottom: 1px solid black;
 }
-.scroll li a:hover {
+.scroll nav li a:hover {
   color: #d87093;
   padding-bottom: 0.25vw;
   border-bottom: 0px solid;
@@ -96,7 +96,6 @@ nav li a:hover {
 
 .jumbotron h1 {
   font-size: 3rem;
-
   margin-bottom: 0vh;
 }
 
@@ -121,12 +120,13 @@ section {
 .abouttext {
   flex: 1 1 auto;
   text-align: justify;
+  font-size: 1.25rem;
 }
 
 .site-section {
   width: 65vw;
   margin: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 10vh;
 }
 
 .portfolio-item {
@@ -148,14 +148,34 @@ section {
 }
 
 .portfolio-item-part-header {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin: auto;
-  padding-left: 3vw;
 }
+
+.portfolio-item-part-subheader {
+  font-size: 1.15rem;
+  font-style: italic;
+  margin: auto;
+}
+
 .portfolio-item-part ul {
   margin-top: 0.2vh;
   font-size: 0.8rem;
-  padding-left: 5vw;
+  padding-inline-start: 1rem;
+}
+
+.portfolio-item-part li {
+  font-size: 1.1rem;
+}
+
+.portfolio-item-part a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.portfolio-item-part a:hover {
+  color: #ffc0cb;
 }
 
 h3.portfolio-item {
@@ -278,12 +298,28 @@ h3.portfolio-item {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   .container {
     width: 1280px;
     margin: auto;
   }
   .nav {
     width: 1280px;
+  }
+  .portfolio-content {
+    margin-bottom: 5vh;
+  }
+
+  .portfolio-item-part-header {
+    padding-left: 5vw;
+  }
+
+  .portfolio-item-part-subheader {
+    padding-left: 5vw;
+  }
+
+  .portfolio-item-part ul {
+    padding-inline-start: 40px;
+    margin-left: 4vw;
   }
 }
